@@ -82,6 +82,7 @@
             <div class="content">
                 <h2>{{ $texto }}</h2>
                 <h2>{{ $texto2 }}</h2>
+                <h2>{{ numbers_to_text(15396) }}</h2>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
