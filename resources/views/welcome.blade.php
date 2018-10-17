@@ -80,9 +80,8 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    {{ $texto }}
-                </div>
+                <h2>{{ $texto }}</h2>
+                <h2>{{ $texto2 }}</h2>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
