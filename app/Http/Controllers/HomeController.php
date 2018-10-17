@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Clases\NumeroALetras;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -12,6 +13,12 @@ class HomeController extends Controller
     */
     public function create(Request $request)
     {
+        /** @var string Esta es la variable que recibirá el texto convertido */
+        $letras = NumeroALetras::convertir(12345.67, 'soles', 'centimos');
 
+        /** Retprno de la vista 'welcome' incluyendo la variable */
+        return view('welcome', [
+            'texto' => $letras
+        ]);
     }
 }
