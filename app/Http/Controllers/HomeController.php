@@ -18,7 +18,8 @@ class HomeController extends Controller
 
         /** Retprno de la vista 'welcome' incluyendo la variable */
         return view('welcome', [
-            'texto' => $letras
+            'texto' => $letras,
+            'texto2' => numbers_to_text(93536),
         ]);
     }
 }
